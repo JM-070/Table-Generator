@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <h1>TABLE GENERATOR</h1>
+    
+    <form action="#" id="formSubmission" method="get">
+        <!-- Name -->
+        <div class="name form">
+            <span>Name</span>
+            <input type="text" placeholder="Matthew" id="name">
+        </div>
+        <!-- Age -->
+        <div class="age form">
+            <span>Age</span>
+            <input type="number" placeholder="18" id="age">
+        </div>
+        <!-- Gender -->
+        
+        <div class="gender form" id="gender">
+            <span>Gender</span>
+            <input type="radio" id="male" name="gender" value="Male" class="gender-opt">Male
+            <!-- <span class="opt"></span> -->
+            
+            <input type="radio" id="female" name="gender" value="Female" class="gender-opt">Female
+            <!-- <span class="opt">Female</span> -->
+            
+        </div>
+        <!-- Courses -->
+        <div class="course form">
+            <span>Course</span>
+            <select name="courses" id="courses" class="course-list">
+                <option value="1">JavaScript</option>
+                <option value="2">Java</option>
+                <option value="3">Python</option>
+                <option value="4">UI/UX</option>
+            </select>
+        </div>
+        <!-- Email -->
+        <div class="email form">
+            <span>Email</span>
+            <input type="Name" placeholder="nacho@nacho.com" id="email">
+        </div>
+        <button type="submit">Save</button>
+    </form>
+
+    <table id="data">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Course</th>
+            <th>Email</th>
+            <th>Action</th>
+          </tr>
+    </table>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>
